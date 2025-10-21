@@ -69,7 +69,7 @@ def reader_thread(port: serial.Serial, stop_evt: threading.Event):
 
 def main():
     ap = argparse.ArgumentParser(description="PRIZM PacketSerial sender with live telemetry.")
-    ap.add_argument("--port", default="/dev/ttyUSB0")
+    ap.add_argument("--port", default="/dev/edubot_prizm")
     ap.add_argument("--baud", type=int, default=115200)
     ap.add_argument("--rate_hz", type=float, default=20.0)
     ap.add_argument("--linear_x", type=float, default=None)
